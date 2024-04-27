@@ -19,7 +19,6 @@ async function executeQuery(query) {
   try {
     await pool.connect();
     const result = await pool.query(query);
-    console.log("ttttttttttttttt");
     return result.rows;
   } catch (err) {
     throw err;
@@ -30,7 +29,7 @@ async function main() {
   try {
     const query = `select * from cars`;
     const result = await executeQuery(query);
-    console.log("ddddddddddddd", result);
+
     return result;
   } catch (err) {
     throw err;
