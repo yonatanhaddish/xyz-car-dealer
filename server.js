@@ -1,7 +1,7 @@
 const express = require("express");
 const { Pool } = require("pg");
 const pool = require("./db");
-const config = require("./server/db");
+const config = require("./db");
 const routes = require("./routes/index");
 
 const app = express();

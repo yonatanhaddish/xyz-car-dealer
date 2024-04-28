@@ -1,4 +1,4 @@
-const carHelper = require("../../helpers/carHelper");
+const carHelper = require("../../lib/helpers/carHelper");
 
 function getCars(req, res, next) {
   carHelper.getCars((data) => {
