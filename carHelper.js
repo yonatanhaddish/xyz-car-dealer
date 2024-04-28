@@ -1,4 +1,4 @@
-const carDB = require("../lib/carsDB");
+const carDB = require("./lib/carsDB");
 
 function getCars(callback) {
   carDB.getCars().then((data) => {

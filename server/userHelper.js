@@ -1,4 +1,4 @@
-const userDB = require("../lib/userDB");
+const userDB = require("../server/lib/userDB");
 
 function getUsers(callback) {
   userDB.getUsers().then((data) => {
